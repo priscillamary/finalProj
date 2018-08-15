@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>E-Waste Recycle Center Map</title>
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<link rel="stylesheet" href="webproj.css"/>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+<style>
+#map {
+    width: 960px;
+    height:500px;
+    margin: auto;
+}
+</style>
+
+</head>
+
+<body>
+  <p><center>Find the Best & Nearest Electronics Recycling Center<center><p>
+  <div id="map"></div>
+<script>
+
+    var map = L.map('map',{
+    center: [40.7128, 285.994],
+    zoom: 10
+    });
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+
+    var firefoxIcon = L.icon({
+        iconUrl: 'mapmarker.png',
+        iconSize: [38, 45], // size of the icon
+        }); //40.4039, 286.4087
+        //,["The 4th Bin",40.4509,286.4187],["Green Chip Electronic Waste Solutions- Hard Drive Shredding & Computer Recycling", 40.735021,360-73.944583]["My Battery Recyclers (MYBRS)",40.715441,-73.9805]
+
+    //var marker = L.marker([40.7128, 285.994], {icon: firefoxIcon}).bindPopup('Lower East Side Ecology Center Electronic Waste Recycling Warehouse').addTo(map);
+    var locations= [["Lower East Side Ecology Center Electronic Waste Recycling Warehouse/The Gowanus E-waste Warehouse",40.678501,360-73.987625],["The 4th Bin",40.73481,360-73.98598],["Green Chip Electronic Waste Solutions- Hard Drive Shredding & Computer Recycling", 40.735021,360-73.944583],["My Battery Recyclers (MYBRS)",40.715441,360-73.9805], ["Gronics-Recycle Electronic Scraps(EPA/NYS DEC)",40.76,360-73.92],
+    ["ERI",40.750534,360-73.980755],["NetTech Electronics Recycling",40.89579,360-73.86022],["Junk King New York City",40.727367,360-74.005716],["Waste Management-Long Island",40.73806,360-73.940529],["Waste Management-New York",40.81211,360-73.892397],["eRecycleNY",40.695732,360-73.96243],
+    ["NYC DSNY Household Special Waste Drop-Off Sites",40.76,360-73.83],["E-cycle Electronics Recycling- home pick up" ,40.8579,360-74.426],["Coarc ecycle",42.247117,360-73.761066],["Clean Green Electronic Recycling",40.796615,360-74.474436],["Household Special Waste Drop-Off Site",40.817577,360-73.88936],["eRevival LLC",40.88613,360-74.12246],
+    ["E-Waste Experts",40.11577,360-74.842906]];
+    for (var i=0;i<locations.length;i++){
+      var marker =  L.marker([locations[i][1],locations[i][2]], {icon: firefoxIcon}).bindPopup(locations[i][0]).addTo(map);
+
+    }
+
+</script>
+
+</body>
+
+</html>
