@@ -1,66 +1,74 @@
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 11px 14px;
-    overflow: hidden;
-    background-color: #333;
+#homeBg{
+  background-color:#63BFE7;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  text-align:center;
 }
-
-li {
-    display:inline;
+*{
+  margin:0;
 }
+html,body{
+  height:100%;
+}
+h1, h2, h3, h4, h5, h6{
+  margin-bottom:10px;
+}
+nav{
+  position:fixed;
+  top: 100px;
+  background-color: rgba(0,0,0,.5);
+  width: 1200px;
+  height:50px;
+  text-align: center;
+}
+nav a{
+  text-decoration:none;
+  color: white;
+  margin-left:55px;
+  line-height:45px;
+}
+.active{
+  background-color:#63BFE7;
+  padding: 18px 45px;
 
-li a {
+}
+li{
+  display:inline;
+}
+.shockFact{
+  text-align:center;
+}
+.sect{
+  height:100%;
+  background-size: auto 100%;
+  background-position: left top;
+  background-attachment: fixed;
+}
+.subSection1, .subSection2{
+  height:50%;
+  background-color: #E8F8F5;
+  opacity: 100;
+}
+.container {
+    position: relative;
     text-align: center;
     color: white;
-    padding: 14px 16px;
-    text-decoration: none;
 }
+.sectOne{
+  background-image:url("https://images.wallpaperscraft.com/image/computer_keyboard_mouse_laptop_mac_apple_66734_1920x1080.jpg");
+  background-size:cover;
 
-li a:hover:not(.active) {
-    background-color: #111;
 }
-
-.active {
-    background-color: #4CAF50;
+.sectTwo{
+  background-image:url("https://image.freepik.com/free-photo/mornitor-and-television-electronic-waset_7180-751.jpg");
+  background-size:cover;
 }
-#bannerTitle{
-  text-align:center;
+.sectThree{
+  background-image:url("https://cdn.pixabay.com/photo/2015/01/15/16/17/hands-600497_960_720.jpg");
+  background-size:cover;
 }
-#bannerSub{
-  text-align:center;
-}
-body{
-margin: 0;
-padding: 0;
-width: 100%;
-}
-h1 {
-font-family:"Arvo";
-font-weight:normal;
-font-size: 55px;
-text-align: center;
-color: #fff;
-margin: 0;
-padding: 0;
-}
-h2 {
-font-family:"Arvo";
-font-weight: normal;
-font-size: 40px;
-text-align: center;
-color: #fff;
-margin: 0;
-padding: 0;
-}
-h3 {
-font-family: Oswald;
-font-weight: normal;
-font-size: 16px;
-text-align: center;
-margin: 5px 0;
-padding: 0;
-z-index: 1;
-position: relative;
+iframe{
+  width:45%;
+  height: 200px;
 }
