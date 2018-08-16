@@ -9,17 +9,7 @@
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 <link rel="stylesheet" href="webproj.css"/>
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<ul>
-<nav>
-<li><a class="active" href="index.html">Home</a></li>
-<li><a href="why.html">Why Care</a></li>
-<li><a href="wildlife.html">Effects On Wildlife</a></li>
-<li><a href="people.html">Effects On People</a></li>
-<li><a href="getInvolved.html">Make A Change</a></li>
-<li><a href="leafletmap.html">Find a E-Waste Facility</a></li>
-<li><a href="aboutus.html">About Us</a></li>
-</nav>
-</ul>
+
 <style>
 body{
   background: url("fancycrave-530798-unsplash.jpg");
@@ -37,31 +27,52 @@ body{
 
 </head>
 
-<body>
+<body class="colorBackground">
+  <h1 id="homeBg">wE-WASTE:<br/>
+it's time to stop</h1>
+<ul>
+<nav>
+<li><a class="active" href="index.html">Home</a></li>
+<li><a href="why.html">Why Care</a></li>
+<li><a href="wildlife.html">Effects On Wildlife</a></li>
+<li><a href="people.html">Effects On People</a></li>
+<li><a href="getInvolved.html">Make A Change</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+</nav>
+</ul>
+  <div class="sect solidBg">
   <p class="title"><center>Find Electronics Recycling Centers<center><p>
   <p class="title"><center>Top Ranked New York/East Coast Centers<center><p>
   <div id="map"></div>
+</div>
 <script>
+
     var map = L.map('map',{
     center: [40.7128, 285.994],
     zoom: 10
     });
+
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+
+
     var firefoxIcon = L.icon({
         iconUrl: 'mapmarker.png',
         iconSize: [38, 45], // size of the icon
         }); //40.4039, 286.4087
         //,["The 4th Bin",40.4509,286.4187],["Green Chip Electronic Waste Solutions- Hard Drive Shredding & Computer Recycling", 40.735021,360-73.944583]["My Battery Recyclers (MYBRS)",40.715441,-73.9805]
+
     //var marker = L.marker([40.7128, 285.994], {icon: firefoxIcon}).bindPopup('Lower East Side Ecology Center Electronic Waste Recycling Warehouse').addTo(map);
-    var locations= [["Lower East Side Ecology Center Electronic Waste Recycling Warehouse/The Gowanus E-waste Warehouse",40.678501,360-73.987625],["The 4th Bin",40.73481,360-73.98598],["Green Chip Electronic Waste Solutions- Hard Drive Shredding & Computer Recycling", 40.735021,360-73.944583],["My Battery Recyclers (MYBRS)",40.715441,360-73.9805], ["Gronics-Recycle Electronic Scraps(EPA/NYS DEC)",40.76,360-73.92],
-    ["ERI",40.750534,360-73.980755],["NetTech Electronics Recycling",40.89579,360-73.86022],["Junk King New York City",40.727367,360-74.005716],["Waste Management-Long Island",40.73806,360-73.940529],["Waste Management-New York",40.81211,360-73.892397],["eRecycleNY",40.695732,360-73.96243],
-    ["NYC DSNY Household Special Waste Drop-Off Sites",40.76,360-73.83],["E-cycle Electronics Recycling- home pick up" ,40.8579,360-74.426],["Coarc ecycle",42.247117,360-73.761066],["Clean Green Electronic Recycling",40.796615,360-74.474436],["Household Special Waste Drop-Off Site",40.817577,360-73.88936],["eRevival LLC",40.88613,360-74.12246],
+    var locations= [["Lower East Side Ecology Center Electronic Waste Recycling Warehouse/The Gowanus E-waste Warehouse<br>469 President St, Brooklyn, NY 11215",40.678501,360-73.987625],["The 4th Bin<br>708 3rd Ave., 6th Floor, New York, NY 10017",40.73481,360-73.98598],["Green Chip Electronic Waste Solutions- Hard Drive Shredding & Computer Recycling<br>540 Kingsland Ave, Brooklyn, NY 11222", 40.735021,360-73.944583],["My Battery Recyclers (MYBRS)<br>95 Union St. Appointment Only, Brooklyn, NY 11231",40.715441,360-73.9805], ["Gronics-Recycle Electronic Scraps(EPA/NYS DEC)<br> 37-90 Railroad Ave, Long Island City, NY 11101",40.76,360-73.92],
+    ["ERI<br> 261 Madison Ave, New York, NY 10016",40.750534,360-73.980755],["NetTech Electronics Recycling<br>4238 Bronx Blvd, Bronx, NY 10466",40.89579,360-73.86022],["Junk King New York City<br>175 Varick St, New York, NY 10014",40.727367,360-74.005716],["Waste Management-Long Island",40.73806,360-73.940529],["Waste Management-New York",40.81211,360-73.892397],["eRecycleNY<br>65 Emerson Pl, Brooklyn, NY 11205",40.695732,360-73.96243],
+    ["NYC DSNY Household Special Waste Drop-Off Sites<br>29-16C 120th St, Flushing, NY 11354",40.76,360-73.83],["E-cycle Electronics Recycling <br>home pick up" ,40.8579,360-74.426],["Coarc ecycle<br>1 Industrial Tract, Hudson, NY 12534",42.247117,360-73.761066],["Clean Green Electronic Recycling",40.796615,360-74.474436],["Household Special Waste Drop-Off Site",40.817577,360-73.88936],["eRevival LLC",40.88613,360-74.12246],
     ["E-Waste Experts",40.11577,360-74.842906]];
     for (var i=0;i<locations.length;i++){
       var marker =  L.marker([locations[i][1],locations[i][2]], {icon: firefoxIcon}).bindPopup(locations[i][0]).addTo(map);
+
     }
+
 </script>
 
 </body>
