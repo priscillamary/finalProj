@@ -1,38 +1,18 @@
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+// Get the modal
+var modal = document.getElementById('myModal');
 
-	function showQuestions(questions, quizContainer){
-		// code will go here
-	}
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-	function showResults(questions, quizContainer, resultsContainer){
-		// code will go here
-	}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-	// show the questions
-	showQuestions(questions, quizContainer);
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
 
-	// when user clicks submit, show results
-	submitButton.onclick = function(){
-		showResults(questions, quizContainer, resultsContainer);
-	}
-  
-  var myQuestions = [
-	{
-		question: "What is 10/2?",
-		answers: {
-			a: '3',
-			b: '5',
-			c: '115'
-		},
-		correctAnswer: 'b'
-	},
-	{
-		question: "What is 30/3?",
-		answers: {
-			a: '3',
-			b: '5',
-			c: '10'
-		},
-		correctAnswer: 'c'
-	}
-];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
