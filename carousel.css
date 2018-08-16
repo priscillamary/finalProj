@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size:32px;
+  font-family: arial;
+  overflow: hidden;
+
+}
+body{
+  background-color: #a3ffe4;
+  display: block;
+}
+.centered {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgba(100, 100, 100, 0.7);
+outline: black;
+
+}
+#fact {
+  font-size: 52px
+}
+.carousel-inner,img{
+  height:500px;
+  width:200px;
+}
+#carouselContainer,#navigation{
+  display:block;
+  overflow: hidden;
+
+}
