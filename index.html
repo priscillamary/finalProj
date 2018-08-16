@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>end e-waste</title>
-  <link rel="stylesheet" href="webproj.css"/>
-  <link rel="stylesheet" href="animate.css"/>
+  <link rel="stylesheet" href="webproj.css">
 </head>
 <body>
   <h1 id="homeBg">wE-WASTE:<br/>
@@ -14,7 +14,7 @@
   <li><a href="why.html">Why Care</a></li>
   <li><a href="wildlife.html">Effects On Wildlife</a></li>
   <li><a href="people.html">Effects On People</a></li>
-  <li><a href="getInvolved.html">Make A Change</a></li>
+  <li><a href="change.html">Make A Change</a></li>
   <li><a href="aboutus.html">About Us</a></li>
   </nav>
   </ul>
@@ -30,22 +30,48 @@
     Watch this video. Take care of your planet and people.</h1>
     <iframe id="homeVid"src="https://www.youtube.com/embed/F3xNiWAmOB8"></iframe></div>
     <div class="sect sectThree"></div>
-    <div class="subSection2"><h1>THIS ISN'T A BURDEN - only a challenge.</div>
+    <div class="subSection2"><h1>THIS ISN'T A BURDEN - only a challenge.
+
+
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Take the Quiz</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>wE-WASTE Too Much</h2>
+      </div>
+      <div class="modal-body">
+        <p>Want to Learn More about the Epidemic?</p>
+        <p>take the quiz and learn something new</p>
+        <h1 id="quizTitle">Quiz Time<br/>
+        invest in your Earth</h1>
+      <h2>What is considered e-waste?</h2>
+      <form>
+        <input type="radio" name="q1" value="choice1">Radio<br>
+        <input type="radio" name="q1" value="choice2">Refrigerator<br>
+        <input type="radio" name="q1" value="choice3">Light bulbs
+      </form>
+      <input type="submit" value="See Your Results"><div id="results"></div>
+
+      </div>
+      <div class="modal-footer">
+        <h3>wE-WASTE Too Much</h3>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
     <div>
       wE-WASTE was made possible via a collective effort. See "About Us" for more.
     </div>
-      <div id="list-builder"></div>
-      <div id="popup-box">
-          <img src="https://cdn4.iconfinder.com/data/icons/online-menu/64/x_close_denied_delete_cross_circle-512.png" id="popup-close" />
-          <div id="popup-box-content">
-              <h1 id="quizPopUpQ">How Much do You Know about the Epidemic?</h1>
-              <p>
-                  take the quiz and learn something new
-              </p>
-              <button type="button" name="topOfHome"><a href="quiz.html">Quiz</a></button>
-          </div>
-      </div>
-       <script type="application/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="quiz.js"></script>
       <script src="list-builder.js"></script>
+
 </body>
 </html>
