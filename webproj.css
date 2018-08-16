@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   font-family:"titleFont";
-  z-index: 11;
+  z-index: 10000;
 }
 *{
   margin:0;
@@ -34,7 +34,7 @@ ul {
     height:55px;
     top:100px;
     background-color: #333;
-    z-index: 11; 
+    z-index: 10000;
 }
 
 li {
@@ -63,6 +63,10 @@ li a:hover {
   background-color: #E8F8F5;
   opacity: 100;
   text-align:center;
+}
+.mapSect{
+background-size:cover;
+  margin-top: 150px;
 }
 .sectOne{
   background-image:url("https://images.unsplash.com/photo-1516865690679-db5c36d24903?ixlib=rb-0.3.5&s=d5f4847da1300cf23adb9b766cf28511&auto=format&fit=crop&w=1950&q=80g");
