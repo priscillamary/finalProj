@@ -11,22 +11,18 @@
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
 <style>
-.clearPic{
-  background-image: url("green.jpg");
-  background-size:cover;
-  margin-top: 150px;
-}
+
 
 .title {
   font-size: 50px;
-  color: white;
+  color: black;
   padding-top: 10px;
 }
 
 .subtitle{
-  font-size: 25px;
+  font-size: 24px;
   text-align: justify;
-  margin: 30px;
+  margin: 10px;
   text-align: center;
 
 }
@@ -37,21 +33,33 @@
 }
 </style>
 
-</head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="webproj.css">
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>get involved</title>
+</head>
+<body id="colorBackground">
+  <div id="navigation">
   <h1 id="homeBg">wE-WASTE:<br/>
-it's time to stop</h1>
-<ul>
-<nav>
-<li><a class="active" href="index.html">Home</a></li>
-<li><a href="why.html">Why Care</a></li>
-<li><a href="wildlife.html">Effects On Wildlife</a></li>
-<li><a href="people.html">Effects On People</a></li>
-<li><a href="getInvolved.html">Make A Change</a></li>
-<li><a href="aboutus.html">About Us</a></li>
-</nav>
-</ul>
+  it's time to stop</h1>
+  <ul>
+  <nav>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="why.html">Why Care</a></li>
+  <li><a href="wildlife.html">Effects On Wildlife</a></li>
+  <li><a href="people.html">Effects On People</a></li>
+  <li><a class="active" href="getInvolved.html">What Can We Do</a></li>
+  <li><a href="leafletmap.html">Find an E-Waste Facility</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  </nav>
+  </ul>
+  </div>
   <div class="sect clearPic">
   <h1 class="title"><center>Find Electronics Recycling Centers<center><h1>
   <h3 class="subtitle">Top Ranked New York/East Coast Centers: You can reach out to your local E-Waste Recycling Center to donate electronics and prevent the formation of landfills and pollution.<h3>
@@ -80,6 +88,7 @@ it's time to stop</h1>
    ["ERI<br> 261 Madison Ave, New York, NY 10016",40.750534,360-73.980755],["NetTech Electronics Recycling<br>4238 Bronx Blvd, Bronx, NY 10466",40.89579,360-73.86022],["Junk King New York City<br>175 Varick St, New York, NY 10014",40.727367,360-74.005716],["Waste Management-Long Island",40.73806,360-73.940529],["Waste Management-New York",40.81211,360-73.892397],["eRecycleNY<br>65 Emerson Pl, Brooklyn, NY 11205",40.695732,360-73.96243],
    ["NYC DSNY Household Special Waste Drop-Off Sites<br>29-16C 120th St, Flushing, NY 11354",40.76,360-73.83],["E-cycle Electronics Recycling <br>home pick up" ,40.8579,360-74.426],["Coarc ecycle<br>1 Industrial Tract, Hudson, NY 12534",42.247117,360-73.761066],["Clean Green Electronic Recycling<br>139 Morris St, Morristown, NJ 07960",40.796615,360-74.474436],["Household Special Waste Drop-Off Site<br>Hunts Point Avenue, Bronx, NY 10474",40.817577,360-73.88936],["eRevival LLC<br>141 Lanza Ave, Garfield, NJ 07026",40.88613,360-74.12246],
    ["E-Waste Experts",40.11577,360-74.842906]];
+
     for (var i=0;i<locations.length;i++){
       var marker =  L.marker([locations[i][1],locations[i][2]], {icon: firefoxIcon}).bindPopup(locations[i][0]).addTo(map);
 
