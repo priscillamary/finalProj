@@ -3,13 +3,14 @@
   src:url("Digital_tech.otf");
 }
 #homeBg{
-  background-color:#ade1ff;
+  background-color:#63BFE7;
   width: 100%;
   height: 100px;
   position: fixed;
   top: 0;
   font-family:"titleFont";
   z-index: 10000;
+  margin-top: 0px;
 }
 #avatar{
   width:100px;
@@ -246,4 +247,20 @@ body{
  background-image:url("https://images.unsplash.com/photo-1514043454212-14c181f46583?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88519aba92b279e4acdacbbd5c9dc98e&auto=format&fit=crop&w=1189&q=80");
  background-size:cover;
  margin-top: 150px;
+}
+.sectWildlife1{
+  background-image:url("https://images.pexels.com/photos/64219/dolphin-marine-mammals-water-sea-64219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size:cover;
+}
+.sectWildlife2{
+  background-image:url("https://images.pexels.com/photos/51964/humpback-whale-natural-spectacle-nature-mammal-51964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size:cover;
+}
+.sectWildlife3{
+  background-image:url("https://images.pexels.com/photos/982229/pexels-photo-982229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size:cover;
+}
+.SubSectWildlife1, .SubSectWildlife2{
+  height:100%;
+  text-align:center;
 }
