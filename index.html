@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>end e-waste</title>
   <link rel="stylesheet" href="webproj.css">
+  <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
   <h1 id="homeBg">wE-WASTE:
@@ -28,7 +29,6 @@
     wE-WASTE so much hardware, 90 empire state buildings worth of electronics were thrown away as of 2016 alone.<br/>
   <script>
   window.onload = function () {
-
   var chart = new CanvasJS.Chart("chartContainer", {
   	animationEnabled: true,
   	title:{
@@ -65,7 +65,6 @@
   	}]
   });
   chart.render();
-
   }
   </script>
 
@@ -81,6 +80,9 @@
 
 
   <!-- Trigger/Open The Modal -->
+  <p>Want to Learn More about the Epidemic?</p>
+  <p>take the quiz and learn something new</p>
+
   <button id="myBtn">Take the Quiz</button>
 
   <!-- The Modal -->
@@ -92,19 +94,13 @@
         <span class="close">&times;</span>
         <h2>wE-WASTE Too Much</h2>
       </div>
-      <div class="modal-body">
-        <p>Want to Learn More about the Epidemic?</p>
-        <p>take the quiz and learn something new</p>
-        <h1 id="quizTitle">Quiz Time<br/>
-        invest in your Earth</h1>
-      <h2>Q1) What is considered e-waste?</h2>
-      <form>
-        <input type="radio" name="q1" value="choice1">Radio<br>
-        <input type="radio" name="q1" value="choice2">Refrigerator<br>
-        <input type="radio" name="q1" value="choice3">Light bulbs
-      </form>
-      <input type="submit" value="See Your Results"><div id="results"></div>
 
+      <div class="modal-body">
+          <h1 id="quizTitle">Invest in your Earth</h1>
+        <div id="quiz"></div>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
+<script src="quiz.js"></script>
       </div>
       <div class="modal-footer">
         <h3>wE-WASTE Too Much</h3>
@@ -118,6 +114,7 @@
       wE-WASTE was made possible via a collective effort. See "About Us" for more.
     </div>
       <script src="quiz.js"></script>
+      <script src="modal.js"></script>
     <!-- <script src="bubbleChart.js"></script> -->
 </body>
 </html>

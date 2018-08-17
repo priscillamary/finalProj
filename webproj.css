@@ -37,6 +37,7 @@ ul {
     overflow: hidden;
     position:fixed;
     width:100%;
+    color:white;
     height:55px;
     top:100px;
     background-color: #011f30;
@@ -50,6 +51,7 @@ li {
 li a {
     display: block;
     color: white;
+    font-size:20px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -69,8 +71,17 @@ li a:hover {
   height:100%;
   text-align:center;
 }
+.title {
+  font-size: 32px;
+  color: white;
+}
+#map {
+    width: 960px;
+    height:500px;
+    margin: auto;
+}
 .mapSect{
-background-size:cover;
+  background-size:cover;
   margin-top: 150px;
 }
 .sectOne{
@@ -107,7 +118,7 @@ background-size:cover;
   font-family:arial;
 }
 .clearPic{
- background-image: url("green.jpg");
+ background-image: url("https://raw.githubusercontent.com/priscillamary/finalProj/master/green.jpg");
  background-size:cover;
  margin-top: 150px;
 }
