@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="webproj.css">
 </head>
 <body>
-  <h1 id="homeBg">wE-WASTE:<br/>
+  <h1 id="homeBg">wE-WASTE:
+      <img src="https://media.giphy.com/media/xUOwGiewfQAm3tcIA8/giphy.gif" id="avatar"/><br/>
   it's time to stop</h1>
   <ul>
   <nav>
@@ -15,23 +16,68 @@
   <li><a href="wildlife.html">Effects On Wildlife</a></li>
   <li><a href="people.html">Effects On People</a></li>
   <li><a href="getInvolved.html">Make A Change</a></li>
-  <li><a href="leafletmap.html">Find a E-Waste Facility</a></li>
+  <li><a href="leafletmap.html">Find an E-Waste Facility</a></li>
   <li><a href="aboutus.html">About Us</a></li>
   </nav>
 </ul>
     <div class="sect sectOne"><h1 id="shockFact">Fact:<br/>
     The U.S. produces more e-waste than any other country - 9.4 million tons per year.</h1></div>
     <div class="subSection1"><h1>The Truth...<br/>
-    People produce 40 million tons of e-waste every year, that's like finding out that the world throws away 800 laptops per second.<br/>
-    - The World Counts<br/>
+    <h1 class="techFont">wE</h1>produce 40 million tons of e-waste every year - equal to the world throwing away 800 laptops per second.<br/>
+    - The World Counts</h1><br/>
     wE-WASTE so much hardware, 90 empire state buildings worth of electronics were thrown away as of 2016 alone.<br/>
-    <img src="http://batteriesandsustainability.org/assets/ch4/ch4fig1.jpg"></h1></div>
+  <script>
+  window.onload = function () {
+
+  var chart = new CanvasJS.Chart("chartContainer", {
+  	animationEnabled: true,
+  	title:{
+  		text: "The E-Waste Melting Pot - 2016"
+  	},
+  	axisX: {
+  		title:"Million Metric Tons of E-Waste Produced"
+  	},
+  	axisY: {
+  		title:"Lbs Produced per Capita"
+  	},
+  	legend:{
+  		horizontalAlign: "left"
+  	},
+  	data: [{
+  		type: "bubble",
+  		showInLegend: true,
+  		legendText: "x is million metric tons produced, y is lbs produced per person, size of circle is population of country (in billions)",
+  		legendMarkerType: "circle",
+  		legendMarkerColor: "grey",
+  		toolTipContent: "<b>{name}</b><br/> {x} million tons<br/> {y} lbs per capita<br/> Population: {z}",
+  		dataPoints: [
+  			{ x: 7.2, y: 11.5, z:1.4, name: "China" },
+  			{ x: 6.3, y: 42.8, z: .3, name: "US" },
+  			{ x: 2.1, y: 37.6, z: .1, name: "Japan" },
+  			{ x: 2.0, y: 3.3, z: 1.3, name: "India" },
+  			{ x: 1.9, y: 50.1, z: .08, name: "Germany" },
+  			{ x: 1.5, y: 16.3, z: .2, name: "Brazil" },
+  			{ x: 1.4, y: 21.4, z: .1, name: "Russia" },
+  			{ x: 1.4, y: 47, z: .07, name: "France" },
+  			{ x: 1.3, y: 10.8, z: .3, name: "Indonesia" },
+  			{ x: 1.2, y: 41.7, z:.06, name: "Italy" },
+  		]
+  	}]
+  });
+  chart.render();
+
+  }
+  </script>
+
+  <center><div id="chartContainer" style="height: 500px; width: 100%;"></div></center>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </h1></div>
     <div class="sect sectTwo"></div>
     <div class="subSection2"><h1>Need More Facts?<br/>
     Watch this video. Take care of your planet and people.</h1>
     <iframe id="homeVid"src="https://www.youtube.com/embed/F3xNiWAmOB8"></iframe></div>
     <div class="sect sectThree"></div>
-    <div class="subSection2"><h1>THIS ISN'T A BURDEN - only a challenge.
+    <div class="subSection2"><h1>THIS ISN'T A BURDEN FOR YOU - only a challenge for us.
 
 
   <!-- Trigger/Open The Modal -->
@@ -72,6 +118,6 @@
       wE-WASTE was made possible via a collective effort. See "About Us" for more.
     </div>
       <script src="quiz.js"></script>
-
+    <!-- <script src="bubbleChart.js"></script> -->
 </body>
 </html>

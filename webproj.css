@@ -1,4 +1,4 @@
-@font-face {
+@font-face, .techFont {
   font-family: titleFont;
   src:url("Digital_tech.otf");
 }
@@ -11,12 +11,18 @@
   font-family:"titleFont";
   z-index: 10000;
 }
+#avatar{
+  width:100px;
+  height:100px;
+  float:right;
+  margin:25px 25px 10 0;
+}
 *{
   margin:0;
 }
 html,body{
   height:100%;
-  background-color:#A6EAB1;
+  background-color:#B7F39F;
 }
 h1, h2, h3, h4, h5, h6{
   margin-bottom:10px;
@@ -60,7 +66,7 @@ li a:hover {
 }
 .subSection1, .subSection2{
   height:100%;
-  background-color: #E8F8F5;
+  background-color: #B7F39F;
   opacity: 100;
   text-align:center;
 }
@@ -127,9 +133,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
     animation-duration: 0.4s
 
 }

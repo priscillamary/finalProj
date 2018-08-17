@@ -27,11 +27,23 @@ body{
 
 </head>
 
-<body >
+<body>
 
+  <div id="navigation">
   <h1 id="homeBg">wE-WASTE:<br/>
-it's time to stop</h1>
-<ul>
+  it's time to stop</h1>
+  <ul>
+  <nav>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="why.html">Why Care</a></li>
+  <li><a href="wildlife.html">Effects On Wildlife</a></li>
+  <li><a href="people.html">Effects On People</a></li>
+  <li><a href="getInvolved.html">What Can We Do</a></li>
+  <li><a class="active" href="leafletmap.html">Find an E-Waste Facility</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  </nav>
+  </ul>
+  </div>
   <div class="sect solidBg">
   <p class="title"><center>Find Electronics Recycling Centers<center><p>
   <p class="title"><center>Top Ranked New York/East Coast Centers<center><p>
@@ -49,7 +61,7 @@ it's time to stop</h1>
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
     var firefoxIcon = L.icon({
-        iconUrl: 'mapmarker.png',
+        iconUrl: 'https://github.com/priscillamary/finalProj/blob/master/mapmarker.png?raw=true',
         iconSize: [38, 45], // size of the icon
         }); //40.4039, 286.4087
         //,["The 4th Bin",40.4509,286.4187],["Green Chip Electronic Waste Solutions- Hard Drive Shredding & Computer Recycling", 40.735021,360-73.944583]["My Battery Recyclers (MYBRS)",40.715441,-73.9805]
@@ -66,4 +78,3 @@ it's time to stop</h1>
 </body>
 
 </html>
-
