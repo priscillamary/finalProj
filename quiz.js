@@ -106,8 +106,14 @@
         b: "False",
       },
       correctAnswer: "a"
-    }
-    
+    },
+    {
+      question: "Question 6) The United States generated 11.7 million tons of e-waste that is not being recycled in 2014.",
+      answers: {
+        a: "True",
+        b: "False",
+      },
+      correctAnswer: "a"
   ];
   // display quiz right away
   buildQuiz();
