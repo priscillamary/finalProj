@@ -108,7 +108,7 @@
       correctAnswer: "a"
     },
     {
-      question: "Question 6) The United States generated 11.7 million tons of e-waste that is not being recycled in 2014.",
+      question: "Question 6) E-waste is cause by improper & electronic waste recycling.",
       answers: {
         a: "True",
         b: "False",
