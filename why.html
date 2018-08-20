@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>end e-waste</title>
+  <link rel="stylesheet" href="webproj.css">
+  <link rel="stylesheet" href="timeline.css">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<style>
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: table;
+
+}
+section.ok{
+  background-color: #B7F39F ;
+}
+
+p{
+  color: black;
+  font-family: arial;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.scroll-down{
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1)
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+.subWhy1, .subWhy2{
+  height:400px;
+  text-align: center;
+}
+.sectWhy1{
+ background-image:url("https://images.unsplash.com/photo-1516865527622-54d1fef8bab8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7efd490c2991674d42adf7e7a2c131f5&auto=format&fit=crop&w=1050&q=80");
+
+ background-size:cover;
+}
+.sectWhy2{
+ background-image:url("https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f799bed83db2959c476e69a3307d39e&auto=format&fit=crop&w=600&q=60");
+
+ background-size:cover;
+ margin-top: 150px;
+}
+.sectWhy3{
+ background-image:url("https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f2e8843e67935b873f32154438cf9664&auto=format&fit=crop&w=600&q=60");
+ background-size:cover;
+ margin-top: 150px;
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.infocolumn {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.columnChart:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.imgIcon{
+  height:80px;
+  width:80px;
+}
+</style>
+<body>
+  <div id="navigation">
+  <h1 id="homeBg">wE-WASTE:
+      <img src="https://media.giphy.com/media/xUOwGiewfQAm3tcIA8/giphy.gif" id="avatar"><br/>
+  it's time to stop</h1>
+  <ul>
+  <nav>
+  <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="why.html">Why Care</a></li>
+  <li><a href="wildlife.html">Effects On Wildlife</a></li>
+  <li><a href="people.html">Effects On People</a></li>
+  <li><a href="getInvolved.html">What Can We Do</a></li>
+  <li><a href="leafletmap.html">Find an E-Waste Facility</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  </nav>
+  </ul>
+  </div>
+
+  <div class="sect sectWhy1"><h1 id="shockFact">
+    Why Should You Care? <br/>
+</h1></div>
+   <div class="subWhy1"></br>
+     <h1>E-Waste affects...US and OUR FUTURE</h1>
+    <img src="https://i.pinimg.com/originals/7b/54/9f/7b549f34702f2419bc4a1eb986f808fd.jpg"style="margin-top: 5px, width:100%, height:300px"></br>
+
+    <!--<button id="jobs" onclick="jobsFunc()">Jobs</button>
+    <button id="health" onclick="healthFunc()">Your Health</button>
+    <button id="tons" onclick="jobsFunc()">Litter&Pollution</button>
+    <button id="airsoil" onclick="jobsFunc()">Air, Soil, & Water</button>-->
+    <section>
+<a href="#" class="scroll-down" address="true"></a>
+</section>
+<section class="ok">
+</div>
+   <div class="sect sectWhy2"></div>
+   <div class ="subWhy2"></br>
+     <div class="columnChart">
+  <div class="infocolumn" style="background-color:#6fe296;">
+    <h2>Jobs</h2>
+    <p>Reusing and Recycling means...More Jobs</p></br>
+    <img class="imgIcon" src="https://image.flaticon.com/icons/svg/912/912318.svg" >
+  </div>
+  <div class="infocolumn" style="background-color:#33f775;">
+    <h2>Health</h2>
+    <p>Reusing and Recycling means... less chances of CANCER</p></br>
+    <img class="imgIcon" src="https://image.flaticon.com/icons/svg/808/808982.svg">
+  </div>
+  <div class="infocolumn" style="background-color:#6fe296;">
+    <h2>Litter and Pollution</h2>
+    <p>Reusing and Recycling means...Healthier Environment</p></br>
+    <img class="imgIcon" src="https://image.flaticon.com/icons/svg/75/75227.svg">
+  </div>
+  <div class="infocolumn" style="background-color:#33f775;">
+    <h2>Air, Soil, and Water</h2>
+    <p>Reusing and Recycling means...realizing how many TONS of electronics we really WASTE</p></br>
+    <img class="imgIcon" src="https://image.flaticon.com/icons/svg/861/861157.svg">
+  </div>
+</div>
+   </div>
+   <div class="sect sectWhy3"></div>
+   <div class="subWhy3"></br>
+     <h1 id="wordsButton">words<h1>
+</body>
+<script>
+$(function() {
+   $('.scroll-down').click (function() {
+     $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+     return false;
+   });
+ });
+function jobsFunc(){
+
+}
+</script>
+</html>
