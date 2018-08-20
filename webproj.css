@@ -34,7 +34,6 @@ html,body{
   background-color:#B7F39F;
 }
 h1, h2, h3, h4, h5, h6, p{
-  margin-bottom:10px;
   color:black;
   font-family:"titleFont";
 
@@ -45,6 +44,7 @@ h1, h2, h3, h4, h5, h6, p{
     height:100px;
 }
 ul {
+    text-align:center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -122,7 +122,7 @@ li a:hover {
 #shockFact{
   margin-left:100px;
   margin-right:100px;
-  background-color: rgba(0,0,0,0.30);
+  background-color: rgba(0,0,0,0.60);
   color:#fff;
   text-align:center;
   padding-left:15px;
@@ -144,7 +144,7 @@ li a:hover {
  text-align:center;
 }
 .subSectionInvolved2{
-  height:120%;
+  height:400px;
 }
 .sectGetInvolved1{
  background-image:url("https://images.unsplash.com/photo-1516865622081-e98d705bb920?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e453c06501d9fb07a1d9e4d598410be&auto=format&fit=crop&w=1050&q=80");
@@ -352,4 +352,54 @@ p{
   transform: translateY(0px);
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
+}
+#textForChina{
+  position: absolute;
+  margin-top: -5%;
+  margin-left: 225px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(100, 100, 100, 0.9);
+  outline: black;
+  width:400px;
+  margin-left:230px;
+}
+#textForIndia{
+  position: absolute;
+  margin-top: -5%;
+  margin-left: 550px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(100, 100, 100, 0.9);
+  outline: black;
+  margin: center;
+  width:400px;
+  margin-left: 665px;
+}
+#textForNorway{
+  position: absolute;
+  margin-top: -7%;
+  margin-left: 1100px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(100, 100, 100, 0.7);
+  outline: black;
+  width:400px;
+
+}
+#china{
+  margin-top:5.5%;
+  margin-right:800px;
+  width:400px;
+}
+#india{
+  margin-top:-22%;
+  margin-left: 70px;
+  width:400px;
+}
+#norway{
+  margin-top:-42%;
+  margin-left:900px;
+  width:400px;
+}
+#involvedSubSectTitle{
+  margin-right:auto;
+  margin-left:auto;
 }
