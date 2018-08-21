@@ -90,30 +90,7 @@
         b: "False",
       },
       correctAnswer: "b"
-    },
-    {
-      question: "Question 4) 1.4 billion of cellphones and other electronics are manufactured in 2012.",
-      answers: {
-        a: "True",
-        b: "False",
-      },
-      correctAnswer: "b"
-    },
-    {
-      question: "Question 5) People are throwing away tons of electronics because they don't know to fix them.",
-      answers: {
-        a: "True",
-        b: "False",
-      },
-      correctAnswer: "a"
-    },
-    {
-      question: "Question 6) E-waste is cause by improper & electronic waste recycling.",
-      answers: {
-        a: "True",
-        b: "False",
-      },
-      correctAnswer: "a"
+    }
   ];
   // display quiz right away
   buildQuiz();

@@ -11,6 +11,7 @@ body{
   display: block;
 }
 .centered {
+font-family:"markerFont";
 position: absolute;
 margin-top: -25%;
 left: 50%;

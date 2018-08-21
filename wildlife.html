@@ -4,6 +4,8 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="webproj.css">
+   <link rel="stylesheet" href="timeline.css">
+
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,13 +15,15 @@
   <div id="navigation">
   <h1 id="homeBg">wE-WASTE:
       <img src="https://media.giphy.com/media/xUOwGiewfQAm3tcIA8/giphy.gif" id="avatar"><br/>
-  it's time to stop</h1>
+  It's time to stop</h1>
   <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="why.html">Why Care</a></li>
   <li><a class="active" href="wildlife.html">Effects On Wildlife</a></li>
   <li><a href="getInvolved.html">Make A Change</a></li>
   <li><a href="leafletmap.html">Find an E-Waste Facility</a></li>
+  <li><a href="refs.html">References</a></li>
+
 </ul>
 </div>
   <div class="sect sectWildlife1">
@@ -38,13 +42,12 @@
         </div>
     </div>
     <div id="chartContainer" style="margin-left: 200px;margin-top:210px; height: 300px; width: 800px;"></div>
-    Data based on:<h5><a href="http://batteriesandsustainability.org/assets/ch4/ch4fig1.jpg">batteriesandsustainability.org</a></h5>
+    <h5>Data based on:<a href="http://batteriesandsustainability.org/assets/ch4/ch4fig1.jpg">batteriesandsustainability.org</a></h5>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   </div>
     <h2 class="firstSubSectAnimals">What's the Problem involving Animals?<h2>
     <h3 class="firstSubSectAnimals">- Electronics are made partly out of hazards like lead (which make up older TVs), mercury (which make up flatscreen TVs/computers), and nickel.<br/>
     - Landfills build up with toxic e-waste.</br>
-    - Toxic metals in e-waste can leach into our supply of resources and threatening their integrity.</br>
     - Animals are in any environment - even cities, and when cities fill up with e-waste, these animals
     get in the mix of yet another man-made issue.</h3>
   </div>
@@ -55,48 +58,43 @@
 </section>
 <section class="ok">
 <div class="SubSectWildlife2">
-  <h2>The Vicious Cycle</h2>
-  <p>- Landfills near bodies of water mix with the hazards.<br/>
+  <h2 class="viciousCycleText">The Vicious Cycle</h2>
+  <p class="viciousCycleText">- Landfills near bodies of water mix with the hazards.<br/>
   - Result: contaminated water and soil.<br/>
   - The food chain (all the way up to humans) is ridden with toxins.
   </p>
-
 <style>
-#viciousCyclePic{
-  height:350px;
-  width:800px;
-  margin-left: 200px;
+.viciousCycleText{
+  font-family:"markerFont";
+  font-size:32px;
+}
+#turtlePic{
+  margin-left: 400px;
+}
+#bannerMessageAnimals{
+  font-family:markerFont;
 }
 </style>
-<link rel="stylesheet" href="https://qph.fs.quoracdn.net/main-qimg-5413329eb58a923f3ff67c24e89da97e-c">
 <p>
+  <h1 class="viciousCycleText">Did you Know?...</h1>
+  <li class="viciousCycleText">A computer can contain hundreds of many chemicals including cadmium, lead, mercury, polyvinyl chloride(PVC), and brominated flame retardants(BFRs)</li>
 
-  <li>A computer can contain hundreds of many chemicals including cadmium, lead, mercury, polyvinyl chloride(PVC), and brominated flame retardants(BFRs)</li>
+  <li class="viciousCycleText">The United States and China has at least 32 percent of the world’s total of e-waste.</li>
 
-  <li>The United States and China has at least 32 percent of the world’s total of e-waste.</li>
-
-  <li>Batteries is made out of nickel-cadmium, alkaline, and mercury, and batteries happen to be the potentially dangerous forms of e-waste.</li>
-
-  <li>The regular batteries is okay to be toss in the garbage.</li>
-
-  <li>There seven different types of of pollution.</li>
-
-  <li>The litter can clog the storm-water drains and can cause a flash flood.</li>
-  </li>
-  <img src="https://images.pexels.com/photos/938045/pexels-photo-938045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" id="viciousCyclePic">
+  <li class="viciousCycleText">Batteries are made out of nickel-cadmium, alkaline, and mercury, and happen to be the potentially dangerous forms of e-waste.</li>
 
 </div>
 </p>
 </section>
   <div class="sect sectWildlife3"></div>
 
-    <h1 id="bannerMessageAnimals">It's time to save animals!</h1>
+    <h1 id="bannerMessageAnimals">It's time to save the animals!</h1>
 
   <img src="https://image.freepik.com/free-photo/ocean-turtle_1328-1610.jpg" id="turtlePic" alt="turtle_1328" width="500" height="333">
 
 
 
-<a href="http://www.eterra.com.ng/articles/impacts-e-waste-environment">Learn More
+<a href="http://www.eterra.com.ng/articles/impacts-e-waste-environment" class="btn">Learn More Here!
 </a>
 <script src="buttonWildlife.js"></script>
 <script src="wildlifeChart.js"></script>

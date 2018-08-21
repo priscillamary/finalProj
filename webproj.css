@@ -1,25 +1,39 @@
 @font-face {
   font-family: liquidFont;
-  src:url('Liquid.ttf');
+  src:url("Liquid.ttf");
 
 }
-homeBg{
+@font-face {
+  font-family: markerFont;
+  src:url("madpakkeDEMO.otf");
+
+}
+@font-face {
+  font-family: pixelFont;
+  src:url("NeuePixelSans.ttf");
+
+}
+#homeBg{
   background-color:#BEF9EC;
   width: 100%;
   height: 100px;
   position: fixed;
   top: 0;
-  font-family:"liquidFont";
+  font-family:"markerFont";
   z-index: 10000;
   line-height: 50px;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 0px;
   color:black;
 }
-p{
+.firstSubSectAnimals{
+  font-family:"markerFont";
+
+}
+.textBeforeVid{
+  margin-top:10px;
+  font-size:40px;
   color:black;
-  font-size:20px;
-  font-family:"titleFont";
 }
 #avatar{
   width:100px;
@@ -27,16 +41,22 @@ p{
   float:right;
   margin:25px 25px 10 0;
 }
+h1{
+  font-family:markerFont;
+  font-size:33px;
+}
 *{
   margin:0;
 }
 html,body{
   height:100%;
   background-color:#B7F39F;
+
 }
-h1, h2, h3, h4, h5, h6, p{
+ h2, h3, h4, h5, h6, p{
   color:black;
-  font-family:"titleFont";
+
+  font-family:Courier;
 
 }
 .active {
@@ -45,6 +65,7 @@ h1, h2, h3, h4, h5, h6, p{
     height:100px;
 }
 ul {
+  font-family:"pixelFont";
     text-align:center;
     list-style-type: none;
     margin: 0;
@@ -137,7 +158,7 @@ li a:hover {
 .clearPic{
  background-image: url("https://raw.githubusercontent.com/priscillamary/finalProj/master/green.jpg");
  background-size:cover;
- margin-top: 150px;
+ margin-top: 15px;
  height:1000px;
 }
 .subSectionInvolved1{
@@ -197,14 +218,18 @@ section {
 section.ok{
   background-color: #B7F39F ;
 }
-
-p{
+.beforeQuiz{
+  line-height:40px;
+  margin-top:10px;
+  color:black;
+}
+/*p{
   color: black;
   font-family: arial;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-}
+}*/
 
 .scroll-down {
   opacity: 1;
@@ -364,6 +389,8 @@ p{
   outline: black;
   width:400px;
   margin-left:230px;
+  font-family:markerFont;
+
 }
 #textForIndia{
   position: absolute;
@@ -374,16 +401,20 @@ p{
   outline: black;
   margin: center;
   width:400px;
+  font-family:markerFont;
+
   margin-left: 665px;
 }
 #textForNorway{
   position: absolute;
   margin-top: -7%;
-  margin-left: 1100px;
+  margin-left: 86%;
   transform: translate(-50%, -50%);
   background-color: rgba(100, 100, 100, 0.7);
   outline: black;
-  width:400px;
+  width:370px;
+  font-family:markerFont;
+
 
 }
 #china{
